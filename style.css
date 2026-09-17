@@ -1,0 +1,267 @@
+body{
+	 background-image: url(images/background1.jpg);
+	text-align: center;
+	margin: 10px;
+	 transition: 0.3s ease-in-out;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins';
+	text-decoration: none;
+	scroll-behavior: smooth;
+	list-style: none;
+}
+
+header{
+	position: fixed;
+    border-style: solid;
+    border-color: rgb(173, 141, 122);
+	top: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	background: linear-gradient(to right, rgb(255, 233, 192), rgb(255, 233, 161));
+	backdrop-filter: blur(8px);
+	padding: 0.5rem 2.5rem;
+	border-radius: 3rem;
+	z-index: 1000;
+}
+
+.logo:hover{
+	transform: scale(1.1);
+}
+.nav-linking{
+	display: flex;
+	gap:3rem;
+}
+
+li a{
+    position:relative;
+    color:rgb(180, 87, 87);
+    font-weight: 600;
+}
+
+li a::before{
+    position: absolute;
+    content:'';
+    width:0;
+    left:0;
+    height: 20px;
+    top: 30px;
+    border-radius: 3rem;
+    transition: 0.3s ease-in-out;
+}
+li a:hover::before{
+    width: 300%;
+}
+.visit-btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(190, 146, 125);
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    border-style: solid;
+    border-top-color: rgb(255, 219, 141);
+    border-bottom-color: rgb(208, 221, 162);
+}
+
+.home-btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgb(190, 146, 125);
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    border-style: solid;
+    border-top-color: rgb(255, 219, 141);
+    border-bottom-color: rgb(208, 221, 162);
+}
+
+.home-btn:hover, .visit-btn:hover{
+    transform: scale(1.03);
+}
+p{
+    color:rgb(119, 73, 35);
+    font-size: 30px;
+}
+
+button{
+    background: linear-gradient(to right, rgb(255, 244, 195), rgb(219, 255, 195));
+    padding: 10px 15px;
+    border: 10px solid rgb(227, 218, 241);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+button:hover, button:focus{
+    background-color: rgb(128, 121, 221);
+}
+
+h1 {
+    color: rgb(139, 111, 94);
+    font-size: 60px;
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
+    border-style: double;
+    border-width: 8px;
+    border-color: rgb(182, 167, 156);
+    background: linear-gradient(to right, rgb(220, 252, 160), rgb(255, 221, 169));
+}
+
+h2 {
+    color: rgb(139, 111, 94);
+    font-size: 40px;
+    font-family: 'Helvetica', monospace;
+    font-weight: lighter;
+}
+
+h3 {
+    color: rgb(139, 111, 94);
+    font-size: 30px;
+    font-family: 'Helvetica', monospace;
+    font-weight: lighter;
+}
+
+li {
+    color: rgb(83, 69, 61);
+    font-size: 25px;
+    font-family: 'Helvetica', monospace;
+    font-weight: lighter;
+}
+
+.box {
+    border: 10px double rgb(173, 141, 122);
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+p {
+    color: rgb(119, 73, 35);
+    font-family: 'Courier New', monospace;
+    font-size: 45px;
+    line-height: 1.5;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.paragraph {
+    border: 25px double rgb(218, 252, 156);
+    background: linear-gradient(to right, rgb(255, 246, 206), rgb(230, 196, 174));
+    padding: 50px;
+    margin: 20px auto;
+    width: 95%;
+}
+
+blockquote {
+    border: 10px double rgb(173, 141, 122);
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(255, 246, 206), rgb(230, 196, 174));
+    padding: 2px;
+    margin: 2px auto;
+    width: 5%;
+}
+
+.blockquote {
+    border: 10px double rgb(173, 141, 122);
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(255, 246, 206), rgb(230, 196, 174));
+    padding: 5px;
+    margin: 5px auto;
+    width: 90%;
+}
+
+.Ingredients {
+    border: 10px dotted rgb(173, 141, 122);
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(255, 246, 206), rgb(230, 196, 174));
+    margin: 5px auto;
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.Preparation {
+    border: 10px dotted rgb(173, 141, 122);
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(255, 246, 206), rgb(230, 196, 174));
+    margin: 5px auto;
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.Tips {
+    border: 10px dotted rgb(173, 141, 122);
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(255, 246, 206), rgb(230, 196, 174));
+    margin: 5px auto;
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.right-image {
+    border: 10px double rgb(218, 252, 156);
+    width: 900px;
+    height: 700px;
+     margin: 5px auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.Recipe {
+    border: 10px double rgb(173, 141, 122);
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(255, 246, 206), rgb(230, 196, 174));
+    margin: 500px auto;
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+caption {
+    color: rgb(119, 73, 35);
+    font-size: 50px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+tr {
+    color: rgb(119, 73, 35);
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
